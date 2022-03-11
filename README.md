@@ -2,7 +2,7 @@
 	<img src="https://rodrigoavalente.github.io/assets/images/steroidtocat.png" />
 </h1>
 
-# GitHub API
+<h1 align="center">GitHub API</h1>
 
 ##  BaseURL 
 http://localhost:3000/ (SUBSTITUIR PELA URL DO HEROKU)
