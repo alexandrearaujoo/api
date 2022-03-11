@@ -9,7 +9,7 @@ server.get('/repos/:owner/:repo', async (req, res) => {
     try {
         await await api.get(`/repos/${req.params.owner}/${req.params.repo}`)
         .then(response => {
-            const {id, name, full_name,visibility, default_branch, description} = response.data
+            const {id, name, full_name,visibility, default_branch, description, owner} = response.data
             const newData = {
                     id: id,
                     name:name,
@@ -18,17 +18,16 @@ server.get('/repos/:owner/:repo', async (req, res) => {
                     default_branch: default_branch,
                     description: description
             }
-            const {owner} = response.data
             const newOwner = {
                 id: owner.id,
                 avatar_url: owner.avatar_url,
                 page: owner.html_url,
 
             }
-            res.send({data: newData, owner: newOwner})
+            res.status(200).send({data: newData, owner: newOwner})
         })
     }
-    catch {
-        res.send({message: "Algo deu errado"})
+    catch (error){
+        res.status(404).send({error: error.message})
     }
 })
