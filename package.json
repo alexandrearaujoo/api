@@ -6,10 +6,11 @@
   "author": "Alexandre Araujo <alexandre01393@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon src/server.js"
   },
   "dependencies": {
     "axios": "^0.26.0",
+    "cors": "^2.8.5",
     "express": "^4.17.3"
   },
   "devDependencies": {

@@ -1,11 +1,8 @@
-const api = require('./api')
 const express = require('express')
-const server = express()
-server.use(express.json())
-server.listen(3001)
+const router = express.Router()
+const api = require('../services/api.js')
 
-
-server.get('/repos/:owner/:repo', async (req, res) => {
+router.get('/:owner/:repo', async (req, res) => {
     try {
         await await api.get(`/repos/${req.params.owner}/${req.params.repo}`)
         .then(response => {
@@ -32,3 +29,5 @@ server.get('/repos/:owner/:repo', async (req, res) => {
         res.status(404).send({error: error.message})
     }
 })
+
+module.exports = router
