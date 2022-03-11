@@ -8,7 +8,7 @@
 https://github-api-kenzieacademy.herokuapp.com/
 
 ## Endpoint
-GET - /repos/owner/repos
+GET - /repos/owner/repo
 
 *exemplo:https://github-api-kenzieacademy.herokuapp.com/repos/facebook/react *
 ```json
