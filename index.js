@@ -9,14 +9,15 @@ server.get('/repos/:owner/:repo', async (req, res) => {
     try {
         await await api.get(`/repos/${req.params.owner}/${req.params.repo}`)
         .then(response => {
-            const {id, name, full_name,visibility, default_branch, description, owner} = response.data
+            const {id, name, full_name,visibility, default_branch, description, html_url, owner} = response.data
             const newData = {
                     id: id,
                     name:name,
                     full_name: full_name,
                     visibility: visibility,
                     default_branch: default_branch,
-                    description: description
+                    description: description,
+                    html_url: html_url
             }
             const newOwner = {
                 id: owner.id,
