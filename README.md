@@ -4,7 +4,7 @@
 
 <h1 align="center">GitHub API</h1>
 
-_Api intermediária para consumir a API oficial do GitHub: https://api.github.com/
+Api intermediária para consumir a API oficial do GitHub: https://api.github.com/
 
 ##  BaseURL 
 https://github-api-kenzieacademy.herokuapp.com/
