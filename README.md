@@ -4,13 +4,18 @@
 
 <h1 align="center">GitHub API</h1>
 
+_Api intermediária para consumir a API oficial do GitHub: https://api.github.com/
+
 ##  BaseURL 
 https://github-api-kenzieacademy.herokuapp.com/
 
 ## Endpoint
-GET - /repos/owner/repo
+`GET - /repos/owner/repo`
 
 *exemplo:https://github-api-kenzieacademy.herokuapp.com/repos/facebook/react *
+
+`Status code - 200`
+
 ```json
 {
 	"data": {
