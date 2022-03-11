@@ -5,12 +5,12 @@
 <h1 align="center">GitHub API</h1>
 
 ##  BaseURL 
-http://localhost:3000/ (SUBSTITUIR PELA URL DO HEROKU)
+https://github-api-kenzieacademy.herokuapp.com/
 
 ## Endpoint
 GET - /repos/owner/repos
 
-*exemplo: http://localhost:3000/repos/facebook/react *
+*exemplo:https://github-api-kenzieacademy.herokuapp.com/repos/facebook/react *
 ```json
 {
 	"data": {
