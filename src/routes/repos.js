@@ -4,7 +4,7 @@ const api = require('../services/api.js')
 
 router.get('/:owner/:repo', async (req, res) => {
     try {
-        await await api.get(`/repos/${req.params.owner}/${req.params.repo}`)
+        await api.get(`/repos/${req.params.owner}/${req.params.repo}`)
         .then(response => {
             const {id, name, full_name,visibility, default_branch, description, html_url, owner} = response.data
             const newData = {
