@@ -12,7 +12,7 @@ https://github-api-kenzieacademy.herokuapp.com/
 ## Endpoint
 `GET - /repos/owner/repo`
 
-Para realizar a requisição, digite o nome da organização ou o usuario do github desejado (owner), logo apos digite o nome do repositorio (repo) que pertence a organização ou usuario passado.
+Para realizar a requisição, digite o nome da organização ou o usuário do github (owner), logo após digite o nome do repositório (repo) que pertence a organização ou usuário passado.
 
 *exemplo:https://github-api-kenzieacademy.herokuapp.com/repos/facebook/react *
 
