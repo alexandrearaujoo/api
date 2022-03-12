@@ -2,15 +2,20 @@
 	<img src="https://rodrigoavalente.github.io/assets/images/steroidtocat.png" />
 </h1>
 
-# GitHub API
+<h1 align="center">GitHub API</h1>
+
+Api intermediária para consumir a API oficial do GitHub: https://api.github.com/
 
 ##  BaseURL 
-http://localhost:3000/ (SUBSTITUIR PELA URL DO HEROKU)
+https://github-api-kenzieacademy.herokuapp.com/
 
 ## Endpoint
-GET - /repos/owner/repos
+`GET - /repos/owner/repo`
 
-*exemplo: http://localhost:3000/repos/facebook/react *
+*exemplo:https://github-api-kenzieacademy.herokuapp.com/repos/facebook/react *
+
+`Status code - 200`
+
 ```json
 {
 	"data": {
